@@ -1,0 +1,43 @@
+{
+    "name": "outright/laravelavb",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Pratik Raghubanshi",
+            "email": "pratik.raghubanshi@gmail.com",
+            "homepage": "outrightnepal.com.np"
+        }
+    ],
+    "homepage": "https://github.com/outright/laravelavb",
+    "keywords": ["Laravel", "LaravelAvb"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Outright\\LaravelAvb\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Outright\\LaravelAvb\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Outright\\LaravelAvb\\LaravelAvbServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAvb": "Outright\\LaravelAvb\\Facades\\LaravelAvb"
+            }
+        }
+    }
+}
